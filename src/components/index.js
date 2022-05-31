@@ -3,6 +3,7 @@ import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
 import Hero from './Hero/Hero'
 import Navbar from './Navbar/Navbar'
-import Services from './Services/Services'
+import Splitter from './Splitter/Splitter'
+import Service from './Service/Service'
 
-export { About, Contact, Footer, Hero, Navbar, Services }
+export { About, Contact, Footer, Hero, Navbar, Splitter, Service }

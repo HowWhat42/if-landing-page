@@ -1,0 +1,69 @@
+$secondary-color: white;
+$secondary-color: #1AFF91;
+$width: 600px;
+
+.if-input {
+    position: relative;
+    width: 100%;
+    padding-bottom: 12px;
+
+    label {
+        position: absolute;
+        top: calc($width/15);
+        font-family: 'Clash Display';
+        font-weight: 400;
+        font-size: 24px;
+        color: rgba(white, .5);
+        cursor: text;
+        transition: .25s ease;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding-top: calc($width/15);
+        color: white;
+        font-size: 24px;
+        transition: .3s ease;
+
+        &:valid {
+            ~label {
+                top: 0;
+                font-family: 'Clash Display';
+                font-weight: 400;
+                font-size: calc($width/25);
+                color: rgba(white, .5);
+            }
+        }
+
+        &:focus {
+            ~label {
+                top: 0;
+                font-family: 'Clash Display';
+                font-weight: 400;
+                font-size: calc($width/25);
+                color: #1AFF91;
+            }
+
+            ~.if-input__bar {
+                background: #1AFF91;
+            }
+        }
+
+        &:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px #1aff9036 inset;
+            -webkit-text-fill-color: #1aff9036 !important;
+        }
+    }
+
+    &__bar {
+        width: $width;
+        height: calc($width/150);
+        background: rgba(white, .5);
+        position: relative;
+    }
+}
+
+::selection {
+    background: rgba(#1AFF91, .3);
+}
