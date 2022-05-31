@@ -14,3 +14,4 @@ You can contact me for questions, bug reports, or quotation of your project. And
  - Add English version
  - Transform subject input in select
  - Add Animations
+ - Add RGPD

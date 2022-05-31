@@ -9,9 +9,9 @@ const Navbar = () => {
                 <img src={Logo} />
             </div>
             <div className='if-navbar__ctas'>
-                <a>A Propos</a>
-                <a>Services</a>
-                <a>Contact</a>
+                <a href='#about'>A Propos</a>
+                <a href='#services'>Services</a>
+                <a href='#contact'>Contact</a>
             </div>
             <div className='if-button'>
                 <a>Connexion</a>

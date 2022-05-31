@@ -7,7 +7,7 @@ const Hero = () => {
             <p className='if-hero__topline'>Lancez votre projet avec</p>
             <p className='if-hero__main'>Infinite Lab</p>
             <p className='if-hero__bottomline'>Entreprise de développement informatique</p>
-            <a className='if-button'>En savoir plus</a>
+            <a className='if-button' href='#about'>En savoir plus</a>
         </div>
     )
 }

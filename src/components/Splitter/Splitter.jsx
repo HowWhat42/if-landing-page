@@ -3,7 +3,7 @@ import './Splitter.scss'
 
 const Services = () => {
     return (
-        <div className='if-services'>
+        <div className='if-services' id="services">
             <p className='if-services__title'>&#060; Services /&#062;</p>
             <div className='if-services__text'>
                 <p>Infinite Lab possède différents services pour assurer la continuité de votre projet.</p>

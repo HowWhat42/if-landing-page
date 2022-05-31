@@ -15,7 +15,7 @@ const Contact = () => {
 
 
     return (
-        <div className='if-contact'>
+        <div className='if-contact' id='contact'>
             <div className='if-contact__container'>
                 <p className='if-contact__title'>&#060; Contact /&#062;</p>
                 <hr />
