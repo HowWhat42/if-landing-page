@@ -15,7 +15,7 @@ const Contact = () => {
 
 
     return (
-        <div className='flex flex-col lg:flex-row justify-between px-8 lg:px-12 xl:px-16' id='contact'>
+        <div className='flex flex-col lg:flex-row justify-between px-8 lg:px-12 xl:px-16'>
             <div className='flex flex-col lg:max-w-lg'>
                 <p className='font-clash text-4xl lg:text-5xl xl:text-6xl font-medium mb-4'>&#060; Contact /&#062;</p>
                 <hr className='w-full border-2 rounded-sm mb-8' />
