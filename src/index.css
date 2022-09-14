@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', 'Arial';
   font-size: 16px;
   background: #050505;
   color: #FFFFFF;
