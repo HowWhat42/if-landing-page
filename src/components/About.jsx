@@ -1,4 +1,3 @@
-import { Timeline } from 'flowbite-react'
 import { HiCheck } from 'react-icons/hi'
 import React from 'react'
 
@@ -17,36 +16,24 @@ const About = () => {
             <div>
                 <p className='text-4xl lg:text-5xl xl:text-6xl font-medium font-clash mb-8'>&#060; Projets /&#062;</p>
                 <div className='mx-4'>
-                    <Timeline>
-                        <Timeline.Item>
-                            <Timeline.Point icon={HiCheck} />
-                            <Timeline.Content className='py-4'>
-                                <Timeline.Time>
-                                    Août 2022
-                                </Timeline.Time>
-                                <Timeline.Title className='font-clash text-purple-400'>
-                                    Application Keeper
-                                </Timeline.Title>
-                                <Timeline.Body className='text-slate-100'>
-                                    Développement de l'application propriétaire Air Rental en React Native.
-                                </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point icon={HiCheck} />
-                            <Timeline.Content className='py-4'>
-                                <Timeline.Time>
-                                    Janvier 2022
-                                </Timeline.Time>
-                                <Timeline.Title className='font-clash text-purple-400'>
-                                    Composant Calendrier Adalo
-                                </Timeline.Title>
-                                <Timeline.Body className='text-slate-100'>
-                                    Création d'un composant Adalo permettant d'afficher les réservations et gérer la disponibilité d'un logement.
-                                </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                    </Timeline>
+                    <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                        <li className="mb-10 ml-6 px-4">
+                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-400 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                                <HiCheck />
+                            </span>
+                            <h3 className="flex items-center mb-1 text-lg lg:text-xl font-clash font-medium text-purple-500">Application Keeper <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Plus récent</span></h3>
+                            <time className="block mb-2 text-sm font-normal leading-none text-slate-300">Août 2022</time>
+                            <p className="mb-4 text-base lg:text-lg font-normal text-slate-100">Développement de l'application propriétaire Air Rental en React Native.</p>
+                        </li>
+                        <li className="mb-10 ml-6 px-4">
+                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-400 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                                <HiCheck />
+                            </span>
+                            <h3 className="mb-1 text-lg lg:text-xl font-medium font-clash text-purple-500">Composant Calendrier Adalo</h3>
+                            <time className="block mb-2 text-sm font-normal leading-none text-slate-300">Janvier 2022</time>
+                            <p className="text-base lg:text-lg font-normal text-slate-100">Création d'un composant Adalo permettant d'afficher les réservations et gérer la disponibilité d'un logement.</p>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
