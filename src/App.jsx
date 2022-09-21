@@ -5,6 +5,7 @@ import Splitter from './components/Splitter'
 import Service from './components/Service'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectImg from './assets/images/project.jpg'
 import DevImg from './assets/images/dev.jpg'
 import IntegrationImg from './assets/images/integration.jpg'
 import HousingImg from './assets/images/housing.jpg'
@@ -12,26 +13,42 @@ import HousingImg from './assets/images/housing.jpg'
 const App = () => {
     const services = [
         {
-            title: 'Développement',
-            text: `Au travers de la création d’applications et de fonctionnalités, Infinite Lab peut vous proposer une solution sur mesure.
-            Nous pouvons réaliser tout type de projet, du plus simple au plus exigeant avec NodeJS et NPM.
-            Nous créons les APIs, à l'aide d'Express, pour interconnecter votre projet avec la partie client et d’autres services en ligne.`,
-            img: DevImg,
-            color: '#FFA800'
+            title: 'Gestion du projet',
+            texts: [
+                `Le gestion du projet passe par la définition précise de vos besoins en établissant un cahier des charges.`,
+                `La relation client est ma priorité, c'est pourquoi je saurais m'adapter à l'évolution de vos besoins durant le développement de votre projet.`
+            ],
+            img: ProjectImg,
+            color: '#FFAC00'
         },
         {
-            title: 'Intégration',
-            text: `Nous pouvons intégrer des design et maquettes à l’aide des technologies Web telles que React.JS pour le contenu et l'aspect fonctionnel et SCSS pour la mise en forme. 
-            Gestion de bases de données SQL ou NoSQL.`,
+            title: 'Développement Front End',
+            texts: [
+                `Le Front End est la partie avec laquelle le client peut directement intéragir.`,
+                `Il s'agit du code qui s'exécute sur votre appareil sous forme d'application, de site Web...`,
+                `Pour se faire, j'utilise des frameworks comme React et TailwindCSS pour obtenir un code rapide et léger.`
+            ],
+            img: DevImg,
+            color: '#7FFF00'
+        },
+        {
+            title: 'Développement Back End',
+            texts: [
+                `Le Back End correspond à l'arrière boutique d'un magasin.`,
+                `C'est cette partie qui assure le bon fonctionnement de l'application ou du site Web.`,
+                `On y retrouve la configuration de l'infrastructure, la gestion des bases de données et surtout la conception d'API pour intéragir avec d'autres services en ligne.`
+            ],
             img: IntegrationImg,
-            color: '#00B2FF'
+            color: '#EEFE00'
         },
         {
             title: 'Hébergement',
-            text: `La création de service en ligne nécessite un hébergement de qualité. 
-            La gestion du nom de domaine, d’un serveur mail et de la maintenance sont des points clés pour assurer la continuité de votre projet.`,
+            texts: [
+                `La création de service en ligne nécessite un hébergement de qualité.`,
+                `La gestion du nom de domaine, d’un serveur mail et de la maintenance sont des points clés pour assurer la continuité de votre projet.`
+            ],
             img: HousingImg,
-            color: '#2400FF'
+            color: '#33DBFF'
         }
     ]
 
@@ -41,7 +58,7 @@ const App = () => {
             <Hero />
             <About />
             <Splitter />
-            {services.map((service, i) => <Service key={i} title={service.title} text={service.text} img={service.img} color={service.color} id={i + 1} />)}
+            {services.map((service, i) => <Service key={i} title={service.title} texts={service.texts} img={service.img} color={service.color} id={i + 1} />)}
             <Contact />
             <Footer />
         </div>
