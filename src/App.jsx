@@ -24,7 +24,7 @@ const App = () => {
         {
             title: 'Développement Front End',
             texts: [
-                `Le Front End est la partie avec laquelle le client peut directement intéragir.`,
+                `Le Front End est la partie avec laquelle le client peut directement interagir.`,
                 `Il s'agit du code qui s'exécute sur votre appareil sous forme d'application, de site Web...`,
                 `Pour se faire, j'utilise des frameworks comme React et TailwindCSS pour obtenir un code rapide et léger.`
             ],
@@ -36,7 +36,7 @@ const App = () => {
             texts: [
                 `Le Back End correspond à l'arrière boutique d'un magasin.`,
                 `C'est cette partie qui assure le bon fonctionnement de l'application ou du site Web.`,
-                `On y retrouve la configuration de l'infrastructure, la gestion des bases de données et surtout la conception d'API pour intéragir avec d'autres services en ligne.`
+                `On y retrouve la configuration de l'infrastructure, la gestion des bases de données et surtout la conception d'API pour interagir avec d'autres services en ligne.`
             ],
             img: IntegrationImg,
             color: '#EEFE00'

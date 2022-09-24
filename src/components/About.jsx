@@ -10,7 +10,7 @@ const About = () => {
                     <p>Moi c'est Charles, je suis développeur Fullstack !</p>
                     <p>Passionné par le développement, je décide en 2021 de me lancer à 100% à mon compte en créant Infinite Lab.</p>
                     <p>Je m'occupe de votre projet de la création du premier prototype à l'hébergement final en passant par un développement réfléchi et optimisé.</p>
-                    <p>Je travaille aussi bien pour des entreprises que pour des particuliers, alors vous êtes tous les bienvenus !</p>
+                    <p>Mes services s'adressent aussi bien pour des entreprises que pour des particuliers, alors vous êtes tous les bienvenus !</p>
                     <p>Quelque soit votre projet, je saurais vous accompagner et trouver une solution répondant à vos besoins.</p>
                 </div>
             </div>
