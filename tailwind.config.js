@@ -16,7 +16,7 @@ module.exports = {
         '10xl': '9rem'
       },
       backgroundImage: {
-        'main-background': "url('./assets/images/bg.svg')"
+        'main-background': "url('./assets/images/bg.png')"
       },
       height: {
         '50vh': '50vh'
