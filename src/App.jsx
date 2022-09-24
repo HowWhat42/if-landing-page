@@ -5,10 +5,10 @@ import Splitter from './components/Splitter'
 import Service from './components/Service'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ProjectImg from './assets/images/project.jpg'
-import DevImg from './assets/images/dev.jpg'
-import IntegrationImg from './assets/images/integration.jpg'
-import HousingImg from './assets/images/housing.jpg'
+import ProjectImg from './assets/images/project.webp'
+import DevImg from './assets/images/dev.webp'
+import IntegrationImg from './assets/images/integration.webp'
+import HousingImg from './assets/images/housing.webp'
 
 const App = () => {
     const services = [
