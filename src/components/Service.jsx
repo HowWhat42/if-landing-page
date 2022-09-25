@@ -2,7 +2,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Service = ({ title, texts, img, color, id }) => {
     const isEven = id % 2 == 0
-    const { ref, inView } = useInView()
+    const { ref, inView } = useInView({ triggerOnce: true })
 
     return (
         <div ref={ref} className='flex flex-col py-8 md:py-16 xl:py-48 px-8 lg:px-12 xl:px-16'>

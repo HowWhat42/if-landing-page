@@ -2,8 +2,8 @@ import { HiCheck } from 'react-icons/hi'
 import { useInView } from 'react-intersection-observer'
 
 const About = () => {
-    const { ref, inView } = useInView()
-    const { ref: projetcs, inView: inViewProject } = useInView()
+    const { ref, inView } = useInView({ triggerOnce: true })
+    const { ref: projetcs, inView: inViewProject } = useInView({ triggerOnce: true })
     return (
         <div className='flex flex-col justify-between mx-8 lg:mx-12 xl:mx-16'>
             <div ref={ref} className={inView ? `animate-slide-left` : null}>

@@ -22,8 +22,8 @@ module.exports = {
         '50vh': '50vh'
       },
       animation: {
-        'slide-left': 'slide-left 1s ease-in-out',
-        'slide-right': 'slide-right 1s ease-in-out',
+        'slide-left': 'slide-left 0.7s ease-in-out',
+        'slide-right': 'slide-right 0.7s ease-in-out',
         'fade-in': 'fade-in 0.7s ease-in-out'
       },
       keyframes: {
