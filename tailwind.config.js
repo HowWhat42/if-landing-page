@@ -20,6 +20,25 @@ module.exports = {
       },
       height: {
         '50vh': '50vh'
+      },
+      animation: {
+        'slide-left': 'slide-left 1s ease-in-out',
+        'slide-right': 'slide-right 1s ease-in-out',
+        'fade-in': 'fade-in 0.7s ease-in-out'
+      },
+      keyframes: {
+        'fade-in': {
+          from: { opacity: 0, filter: 'blur(5px)', transform: 'translateY(-30%)' },
+          to: { opacity: 1, filter: 'blur(0)', transform: 'translateY(0)' }
+        },
+        'slide-left': {
+          from: { opacity: 0, filter: 'blur(5px)', transform: 'translateX(-100%)' },
+          to: { opacity: 1, filter: 'blur(0)', transform: 'translateX(0)' }
+        },
+        'slide-right': {
+          from: { opacity: 0, filter: 'blur(5px)', transform: 'translateX(100%)' },
+          to: { opacity: 1, filter: 'blur(0)', transform: 'translateX(0)' }
+        }
       }
     },
   },
