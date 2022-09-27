@@ -20,6 +20,15 @@ module.exports = {
       },
       height: {
         '50vh': '50vh'
+      },
+      animation: {
+        'fade-in': 'fade-in 0.7s ease-in-out'
+      },
+      keyframes: {
+        'fade-in': {
+          from: { opacity: 0, filter: 'blur(5px)', transform: 'translateY(-30%)' },
+          to: { opacity: 1, filter: 'blur(0)', transform: 'translateY(0)' }
+        },
       }
     },
   },
