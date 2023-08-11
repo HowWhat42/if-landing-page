@@ -14,3 +14,10 @@ body {
 ::selection {
   background: rgba(#1AFF91, .3);
 }
+
+.logo {
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}

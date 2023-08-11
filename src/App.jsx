@@ -53,7 +53,7 @@ const App = () => {
     ]
 
     return (
-        <div className="bg-main-background bg-no-repeat bg-center bg-cover">
+        <div className="bg-main-background bg-no-repeat w-full bg-cover">
             <Navbar />
             <Hero />
             <About />
