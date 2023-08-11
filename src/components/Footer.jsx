@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='flex justify-center text-center py-4 xl:py-8'>
-            <p className='font-clash text-sm lg:text-base xl:text-lg'>Infinite Lab © Tous droits réservés | 2022 </p>
+        <div className='flex justify-center text-center pb-2 pt-4 xl:pt-8 xl:pb-4'>
+            <p className='font-clash text-sm lg:text-base'>Infinite Lab © Tous droits réservés | 2023 </p>
         </div>
     )
 }
