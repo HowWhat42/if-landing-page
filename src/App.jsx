@@ -54,15 +54,17 @@ const App = () => {
     ]
 
     return (
-        <div className="bg-main-background bg-no-repeat w-full bg-cover">
-            <Navbar />
-            <Hero />
-            <About />
-            <Splitter />
-            {services.map((service, i) => <Service key={i} title={service.title} texts={service.texts} img={service.img} color={service.color} id={i + 1} />)}
-            <Opinion />
-            <Contact />
-            <Footer />
+        <div className="bg-main-background bg-no-repeat flex flex-grow bg-cover">
+            <div>
+                <Navbar />
+                <Hero />
+                <About />
+                <Splitter />
+                {services.map((service, i) => <Service key={i} title={service.title} texts={service.texts} img={service.img} color={service.color} id={i + 1} />)}
+                <Opinion />
+                <Contact />
+                <Footer />
+            </div>
         </div>
     )
 }

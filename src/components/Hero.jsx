@@ -17,24 +17,26 @@ const Hero = () => {
     }, [])
 
     const scales = [1, 0.93, 0.85, 0.8, 0.75]
+    const factors = [0.5, 1, 0.1, 1, 0.1]
 
     // Move wireframes with parallax effect on mouse move
     const moveWireframes = () => {
         const wireframes = document.querySelectorAll('.wireframes')
+        if(window.innerWidth < 1280) return wireframes.forEach(group => group.style.display = 'none')
 
-        wireframes.forEach((group) => {
+        wireframes.forEach((group, i) => {
             group.childNodes.forEach((wireframe, index) => {
-                // Move and rotateX and rotateY and scale wireframes
-                // RotateX and rotateY are inverted to have a better effect and max rotation is 20deg and min rotation is -20deg to avoid wireframes to go out of the screen
-                // Translate max is 100px and min is -100px to avoid wireframes to go out of the screen
-                // Use dX and dY to have a lerp effect
-                wireframe.style.transform = `translate(${(mousePosition.x - window.innerWidth / 2) / 5 * scales[index]}px, ${(mousePosition.y - window.innerHeight / 2) / 5 * scales[index]}px) rotateX(${-((mousePosition.y - window.innerHeight / 2) / 10 * scales[index]) / 5}deg) rotateY(${((mousePosition.x - window.innerWidth / 2) / 10 * scales[index]) / 5}deg) scale(${scales[index]})`
+                wireframe.animate({
+                    transform: `translate(${(mousePosition.x - window.innerWidth * factors[i]) / 5 * scales[index]}px, ${(mousePosition.y - window.innerHeight * factors[i]) / 5 * scales[index]}px) rotateX(${-((mousePosition.y - window.innerHeight / 2) / 10 * scales[index]) / 5}deg) rotateY(${((mousePosition.x - window.innerWidth / 2) / 10 * scales[index]) / 5}deg) scale(${scales[index]})`
+                }, { duration: 2000, fill: 'forwards' })
             })
         })
     }
 
     useEffect(() => {
-        moveWireframes()
+        if(window.innerWidth > 1024) {
+            moveWireframes()
+        }
     }, [mousePosition])
 
     return (
