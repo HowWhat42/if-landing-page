@@ -11,6 +11,10 @@ body {
   color: #FFFFFF;
 }
 
+::-moz-selection {
+  background: rgba(#1AFF91, .3);
+}
+
 ::selection {
   background: rgba(#1AFF91, .3);
 }

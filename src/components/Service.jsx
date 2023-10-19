@@ -7,7 +7,11 @@ const Service = ({ title, texts, img, color, id }) => {
             <div className={`flex flex-col lg:flex-row justify-between ${isEven ? 'lg:flex-row-reverse text-right' : ''}`}>
                 <img src={img} alt='illustration' className={`m-w-4xl lg:w-1/2`} />
                 <div className={`flex flex-col justify-between ${isEven ? 'items-start' : 'items-end'}`}>
-                    <p className='font-clash text-9xl lg:text-10xl xl:text-230 font-bold text-transparent' style={{ WebkitTextStrokeColor: color, WebkitTextStrokeWidth: '0.2rem' }}>0{id}</p>
+                    <div className="wireframes flex">
+                        <p className='font-clash text-9xl lg:text-10xl xl:text-230 font-bold text-transparent wireframe' style={{ WebkitTextStrokeColor: color, WebkitTextStrokeWidth: '0.2rem' }}>0{id}</p>
+                        <p className='font-clash text-9xl lg:text-10xl xl:text-230 font-bold text-transparent wireframe absolute opacity-60 blur-[1px]' style={{ WebkitTextStrokeColor: color, WebkitTextStrokeWidth: '0.2rem' }}>0{id}</p>
+                        <p className='font-clash text-9xl lg:text-10xl xl:text-230 font-bold text-transparent wireframe absolute opacity-40 blur-[2px]' style={{ WebkitTextStrokeColor: color, WebkitTextStrokeWidth: '0.2rem' }}>0{id}</p>
+                    </div>
                     <div className={`flex flex-col text-sm md:text-lg lg:text-xl font-medium ${isEven ? 'lg:pr-8' : 'lg:pl-8'}`}>{texts.map((text, i) => <p key={i}>{text}</p>)}</div>
                 </div>
             </div>

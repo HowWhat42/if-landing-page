@@ -32,7 +32,7 @@ const Contact = () => {
                     <Input type={'email'} name={'email'} placeholder={'Email'} />
                 </div>
                 <Input type={'text'} name={'subject'} placeholder={'Objet'} />
-                <textarea className='bg-gray-300/20 text-sm md:text-base lg:text-lg text-white w-full h-36 border-2 border-white rounded-lg p-2 mb-4' name='message' placeholder='Message' required />
+                <textarea className='bg-gray-300/20 text-sm md:text-base lg:text-lg text-white w-full h-36 border-2 border-white hover:border-purple-500 rounded-lg p-2 mb-4' name='message' placeholder='Message' required />
                 <input className='font-clash text-sm md:text-base lg:text-lg py-1 px-2 border-2 border-white rounded-lg cursor-pointer text-center hover:bg-gray-300/30' value='Envoyer' type='submit' />
             </form>
         </div>
