@@ -1,5 +1,6 @@
 import React from 'react'
 import AirRentalLogo from '../assets/images/air-rental_logo.webp'
+import TeasquareLogo from '../assets/images/teasquare.png'
 
 const Opinion = () => {
     return (
@@ -18,19 +19,18 @@ const Opinion = () => {
                     <img className='h-20 mr-4' src={AirRentalLogo} alt='AirRental Logo' />
                 </div>
             </div>
-            {/* <div className='bg-white/20 w-full xl:w-1/3 h-1/3 p-4 rounded-lg'>
+            <div className='bg-white/20 w-full xl:w-1/3 h-1/3 p-4 rounded-lg'>
                 <p>
-                    " D'un professionnalisme irréprochable ! <br />
-                    A l'écoute sur l'ensemble de notre projet. Pédagogique dans l'explication des possibles. <br />
-                    Une vraie réussite dans notre collaboration. <br />
-                    Merci ! "
+                    Sa maîtrise technique est impressionnante, et il excelle également dans la gestion de l'hébergement, offrant un accompagnement de qualité.{' '}
+                    <br />
+                    Professionnel et compétent, il est hautement recommandé pour tout projet de développement, offrant une solution complète et fiable.
                 </p>
                 <p className='pt-4 not-italic font-clash'>Killian</p>
                 <div className='flex items-baseline justify-between'>
                     <p className='uppercase text-white/50'>Teasquare</p>
-                    <img className='h-20 mr-4' src={AirRentalLogo} alt='AirRental Logo' />
+                    <img className='h-20 mr-4' src={TeasquareLogo} alt='Teasquare Logo' />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
