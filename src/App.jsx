@@ -10,6 +10,7 @@ import DevImg from './assets/images/dev.webp'
 import IntegrationImg from './assets/images/integration.webp'
 import HousingImg from './assets/images/housing.webp'
 import Opinion from './components/Opinion'
+import Services from './components/Services'
 
 const App = () => {
     const services = [
@@ -59,10 +60,11 @@ const App = () => {
                 <Navbar />
                 <Hero />
                 <About />
+                <Services />
                 <Splitter />
-                {services.map((service, i) => (
+                {/* {services.map((service, i) => (
                     <Service key={i} title={service.title} texts={service.texts} img={service.img} color={service.color} id={i + 1} />
-                ))}
+                ))} */}
                 <Opinion />
                 <Contact />
                 <Footer />

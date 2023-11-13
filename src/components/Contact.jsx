@@ -16,7 +16,7 @@ const Contact = () => {
     return (
         <div className='p-8 md:py-16 xl:py-48 lg:px-12 xl:px-16'>
             <p className='font-clash text-4xl lg:text-5xl xl:text-6xl font-medium mb-8'>&#060; Contact /&#062;</p>
-            <div className='flex flex-col lg:flex-row justify-between '>
+            <div className='flex flex-col lg:flex-row justify-between'>
                 <div className='flex flex-col lg:max-w-lg'>
                     <div className='font-medium text-sm md:text-base lg:text-lg xl:text-xl'>
                         <p>
@@ -50,3 +50,4 @@ const Contact = () => {
 }
 
 export default Contact
+
