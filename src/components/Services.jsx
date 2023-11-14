@@ -2,9 +2,9 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className='w-full xl:h-[150vh] flex justify-center'>
-            <div className='w-5/6 h-full flex flex-col gap-4'>
-                <div className='w-full flex flex-col xl:flex-row gap-4 h-3/5'>
+        <div className='w-full h-[155vh] flex justify-center items-center'>
+            <div className='w-5/6 h-full flex flex-col items-center justify-center gap-4 xl:gap-6'>
+                <div className='w-full flex flex-col xl:flex-row gap-4 xl:gap-6 h-3/5'>
                     <div className='w-full xl:w-1/5 bg-white/20 h-full p-4 rounded-lg'>
                         <p className='uppercase text-white/50'>Front end</p>
                         <p className='font-clash text-xl py-2 bg-clip-text'>Une interface visuelle pour chacun de vos appareils</p>
@@ -19,10 +19,10 @@ const Services = () => {
                             Besoin de fidéliser vos clients ou de fonctionnalités spécifiques ? <br />
                             Je vous accompagne dans la création de votre application mobile, de la conception à la publication sur les stores. <br /> Que ce
                             soit pour iOS ou Android, je m'engage à créer des expériences utilisateur fluides et intuitives. Cette application pourra vous
-                            suivre partout dans votre poche.
+                            suivre partout.
                         </p>
                     </div>
-                    <div className='w-full xl:w-4/5 flex flex-col gap-4 h-full'>
+                    <div className='w-full xl:w-4/5 flex flex-col gap-4 xl:gap-6 h-full'>
                         <div className='bg-white/20 w-full h-1/3 p-4 rounded-lg'>
                             <p className='uppercase text-white/50'>Back end</p>
                             <p className='font-clash text-xl py-2'>Des performances fluides en coulisses</p>
@@ -34,7 +34,7 @@ const Services = () => {
                                 offrir une possibilité d'évolution à votre projet.
                             </p>
                         </div>
-                        <div className='w-full h-1/3 flex flex-col xl:flex-row gap-4'>
+                        <div className='w-full h-1/3 flex flex-col xl:flex-row gap-4 xl:gap-6'>
                             <div className='bg-white/20 w-full xl:w-2/5 h-full p-4 rounded-lg'>
                                 <p className='uppercase text-white/50'>Référencement</p>
                                 <p className='font-clash text-xl py-2'>Soyez le premier aux yeux de vos clients</p>
@@ -54,7 +54,7 @@ const Services = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='w-full h-1/3 flex flex-col xl:flex-row gap-4'>
+                        <div className='w-full h-1/3 flex flex-col xl:flex-row gap-4 xl:gap-6'>
                             <div className='w-full xl:w-4/6 bg-white/20 h-full p-4 rounded-lg'>
                                 <p className='uppercase text-white/50'>Sur-mesure</p>
                                 <p className='font-clash text-xl py-2'>Un problème ? Une solution adaptée</p>

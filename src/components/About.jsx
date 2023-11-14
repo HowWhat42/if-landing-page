@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='flex flex-col justify-between px-8 lg:px-12 xl:px-20 py-8 md:py-16 xl:py-48'>
             <div ref={ref} className={inView ? 'animate-fade-in' : ''}>
-                <p className='text-4xl lg:text-5xl xl:text-6xl font-medium font-clash mb-8'>&#060; A propos /&#062;</p>
+                <p className='text-4xl lg:text-5xl xl:text-6xl font-medium font-clash mb-8'>Qui suis-je ?</p>
                 <div className='text-sm md:text-base lg:text-lg xl:text-xl mb-16 font-medium lg-:w-2/3'>
                     <p>Moi c'est Charles, je suis développeur Fullstack !</p>
                     <p>Passionné par le développement, je décide en 2021 de me lancer à 100% à mon compte en créant Infinite Lab.</p>
@@ -19,7 +19,7 @@ const About = () => {
                     <p>Quelque soit votre projet, je saurais vous accompagner et trouver une solution répondant à vos besoins.</p>
                 </div>
             </div>
-            <div className='py-8 md:py-16 xl:py-32'>
+            <div className='pt-8 md:pt-16 xl:pt-32'>
                 <p className='text-4xl lg:text-5xl xl:text-6xl font-medium font-clash mb-8'>&#060; Projets récents /&#062;</p>
                 <div className='mx-4'>
                     <ol ref={projetcs} className={`relative border-l border-gray-200 ${inViewProject ? 'animate-slide-left' : ''}`}>
@@ -87,3 +87,4 @@ const About = () => {
 }
 
 export default About
+
