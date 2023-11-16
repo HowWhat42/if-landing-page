@@ -1,16 +1,24 @@
 import React from 'react'
 import Input from './Input'
-import emailjs from 'emailjs-com'
+import { Resend } from 'resend'
+import Email from './Email'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 const Contact = () => {
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault()
 
-        emailjs
-            .sendForm('service_2fah0n8', 'template_q5fc0b7', e.target, '1ZQfE7ltt-ZRrlVfP')
-            .then((result) => console.log(result.text))
-            .catch((err) => console.log(err))
-        e.target.reset()
+        try {
+            await resend.emails.send({
+                from: 'Infinite Lab <alert@teasquare.fr>',
+                to: 'charles.lapierre@infinite-lab.com',
+                subject: e.target.subject.value,
+                react: Email({ name: e.target.lastname.value, email: e.target.email.value, message: e.target.message.value }),
+            })
+        } catch (error) {
+            throw new Error(error)
+        }
     }
 
     return (
