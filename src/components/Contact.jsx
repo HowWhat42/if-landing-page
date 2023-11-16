@@ -5,11 +5,22 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault()
+        document.getElementById('status').innerText = ''
 
         emailjs
             .sendForm('service_2fah0n8', 'template_q5fc0b7', e.target, '1ZQfE7ltt-ZRrlVfP')
-            .then((result) => console.log(result.text))
-            .catch((err) => console.log(err))
+            .then((result) => {
+                console.log(result.text)
+                document.getElementById('status').innerText = 'Message envoyé'
+
+                setTimeout(() => {
+                    document.getElementById('status').innerText = ''
+                }, 3000)
+            })
+            .catch((err) => {
+                console.log(err)
+                document.getElementById('status').innerText = "Erreur lors de l'envoi du message. Veuillez réessayer ultérieurement."
+            })
         e.target.reset()
     }
 
@@ -38,11 +49,14 @@ const Contact = () => {
                         placeholder='Message'
                         required
                     />
-                    <input
-                        className='font-clash w-1/3 text-sm md:text-base lg:text-lg py-1 px-2 border-2 border-white rounded-lg cursor-pointer text-center hover:bg-gray-300/30'
-                        value='Envoyer'
-                        type='submit'
-                    />
+                    <div className='flex gap-4 items-center w-full'>
+                        <input
+                            className='font-clash w-1/3 text-sm md:text-base lg:text-lg py-1 px-2 border-2 border-white rounded-lg cursor-pointer text-center hover:bg-gray-300/30'
+                            value='Envoyer'
+                            type='submit'
+                        />
+                        <p id='status'></p>
+                    </div>
                 </form>
             </div>
         </div>
