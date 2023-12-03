@@ -1,11 +1,9 @@
 import React from 'react'
-import { useInView } from 'react-intersection-observer'
 
 const Splitter = () => {
-    const { ref, inView } = useInView({ triggerOnce: true })
     return (
-        <div className={`flex flex-col px-8 lg:px-12 xl:px-20 py-16 xl:py-48 items-center text-center ${inView ? 'animate-fade-in' : ''}`}>
-            <p ref={ref} className='text-4xl lg:text-5xl xl:text-6xl pb-4 font-medium font-clash'>
+        <div className={`flex flex-col px-8 lg:px-12 xl:px-20 py-16 xl:py-48 items-center text-center`}>
+            <p className='text-4xl lg:text-5xl xl:text-6xl pb-4 font-medium font-clash'>
                 Une idée, un projet ?
             </p>
             <div className='text-base md:text-lg lg:text-xl xl:text-2xl lg:w-1/2 py-8'>
