@@ -74,7 +74,7 @@ const About = () => {
                 <li>Statistiques du logement</li>
               </ul>
             </li>
-            <li className='mb-10 ml-6 px-4'>
+            {/* <li className='mb-10 ml-6 px-4'>
               <span className='flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-400 rounded-full ring-8 ring-white'>
                 <HiCheck />
               </span>
@@ -110,7 +110,7 @@ const About = () => {
                 <li>Verrouillage de dates</li>
                 <li>Modification des prix du logement</li>
               </ul>
-            </li>
+            </li> */}
           </ol>
         </div>
       </div>
