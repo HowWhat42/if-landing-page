@@ -16,7 +16,7 @@ const Opinion = () => {
                 </p>
                 <p className='pt-4 not-italic font-clash'>Jules</p>
                 <div className='flex items-baseline justify-between'>
-                    <p className='uppercase text-white/50'>Air Rental</p>
+                    <a href="https://www.air-rental.fr/" target="_blank" rel="noreferrer"><p className='uppercase text-white/50 hover:underline'>Air Rental</p></a>
                     <img className='h-20 mr-4' src={AirRentalLogo} alt='AirRental Logo' />
                 </div>
             </div>
