@@ -64,7 +64,7 @@ const Hero = () => {
                     Infinite Lab
                 </p>
                 <p className='text-base md:text-lg lg:text-xl xl:text-2xl mb-3'>Entreprise de développement informatique</p>
-                <p className='text-base md:text-lg lg:text-xl xl:text-2xl px-4 py-2 bg-gray-300/30 rounded-lg border-white border'>Web - Application - 3D</p>
+                <p className='text-base md:text-lg lg:text-xl xl:text-2xl px-4 py-2 bg-gray-300/30 rounded-lg border-white border'>Web - Application - Hébergement</p>
             </div>
         </div>
     )
