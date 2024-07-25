@@ -6,7 +6,7 @@ import FigueLogo from '../assets/images/figue_logo.png'
 const Opinion = () => {
     return (
         <div className='flex flex-col xl:flex-row justify-center gap-16 py-8 md:py-16 xl:py-48 px-8 lg:px-12 xl:px-20'>
-            <div className='bg-white/20 w-full xl:w-1/3 h-[300px] p-4 rounded-lg flex flex-col justify-between'>
+            <div className='bg-white/20 w-full xl:w-1/3 h-1/3 md:h-[300px] p-4 rounded-lg flex flex-col justify-between'>
                 <p>
                     D'un professionnalisme irréprochable ! <br />
                     A l'écoute sur l'ensemble de notre projet. <br />
@@ -20,7 +20,7 @@ const Opinion = () => {
                     <img className='h-20 mr-4' src={AirRentalLogo} alt='AirRental Logo' />
                 </div>
             </div>
-            <div className='bg-white/20 w-full xl:w-1/3 h-[300px] p-4 rounded-lg flex flex-col justify-between'>
+            <div className='bg-white/20 w-full xl:w-1/3 h-1/3 md:h-[300px] p-4 rounded-lg flex flex-col justify-between'>
                 <p>
 
                     Excellente prestation de Charles. <br />
@@ -33,7 +33,7 @@ const Opinion = () => {
                     <img className='h-20 mr-4' src={FigueLogo} alt='Figue.io Logo' />
                 </div>
             </div>
-            <div className='bg-white/20 w-full xl:w-1/3 h-[300px] p-4 rounded-lg flex flex-col justify-between'>
+            <div className='bg-white/20 w-full xl:w-1/3 h-1/3 md:h-[300px] p-4 rounded-lg flex flex-col justify-between'>
                 <p>
                     Sa maîtrise technique est impressionnante, et il excelle également dans la gestion de l'hébergement, offrant un accompagnement de qualité.{' '}
                     <br />
