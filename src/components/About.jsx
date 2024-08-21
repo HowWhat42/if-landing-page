@@ -24,8 +24,8 @@ const About = () => {
               <span className='flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-400 rounded-full ring-8 ring-white'>
                 <HiCheck />
               </span>
-              <a href="https://www.demoiselles.app/authentication" target="_blank" rel="noreferrer"><h3 className='flex items-center mb-1 text-lg lg:text-xl font-clash font-medium text-purple-500 hover:underline'>Demoiselles
-              {/* <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3'>Plus récent</span> */}
+              <a href="https://www.reveal.me/" target="_blank" rel="noreferrer"><h3 className='flex items-center mb-1 text-lg lg:text-xl font-clash font-medium text-purple-500 hover:underline'>Reveal
+              {/* <span className='bg-blue-100 text-bluehttps://www.infinite-lab.com/-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3'>Plus récent</span> */}
               </h3></a>
               <time className='block mb-2 text-sm font-normal leading-none text-slate-300'>Next.JS / NestJS</time>
               <ul className='list-disc pl-8'>
